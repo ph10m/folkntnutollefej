@@ -1,11 +1,4 @@
-body{
-	margins: 150px 0px 0px 0px;
-	text-align: center;
-	animation: bgfade 5s;
-	-webkit-animation: bgfade 5s;
-		overflow: auto;
 
-}
 @keyframes bgfade{
 	0% {background: gray;}
 	100% {background: white;}

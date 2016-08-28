@@ -1,4 +1,45 @@
 /* this file is for font and main layout styles */
+body{
+	margin-top: 5rem;
+	text-align: center;
+	animation: bgfade 5s;
+	-webkit-animation: bgfade 5s;
+	font-family: 'Oswald', sans-serif;
+	font-size: 100%;
+	/*margin: 0;*/
+	/* overflow: -moz-scrollbars-none; */
+	-ms-overflow-style: none;
+	overflow-y: scroll;
+}
+body::-webkit-scrollbar{
+	
+}
+/* THE ANIMATED TITLE*/
+@font-face {
+  font-family: 'Share Tech Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Share Tech Mono'), local('ShareTechMono-Regular'), url(http://fonts.gstatic.com/s/sharetechmono/v6/RQxK-3RA0Lnf3gnnnNrAsYdJ2JT0J65PSe7wdxAnx_I.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+svg {
+	height: 10rem;
+	min-width: 50%;
+	display: relative;
+	position: fixed;
+	left: 1rem;
+	top: 1rem;
+	margin-top: -8rem;
+}
+#title{
+	letter-spacing: -0.1em;
+	filter: url(#filter);
+	fill: black;
+	font-family: 'Share Tech Mono', sans-serif;
+	font-size: 1.5em;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none;   /* Chrome/Safari/Opera */
@@ -10,14 +51,19 @@
 }
 
 .noselect:hover{
-	cursor: auto;
+	cursor: default;
 }
 
-#title{
-	font-size: 5em;
+/* #title{
+	font-size: 3em;
 	margin-bottom: 5rem;
+	color: #222;
+	font-weight: 400;
+	letter-spacing: 0.05em;
+	margin: 40px auto;
+	text-transform: uppercase;
 }
-
+ */
 
 
 .subjectBox{
@@ -37,18 +83,29 @@
     transition: all 350ms ease-in-out;
 }
 .subjectBox:hover{
-	.subject_info
 	opacity: 1;
 }
 
-.subject_info{
+
+.subjectInfo{
 	display: inline-block;
 	text-align: left;
 	/* overflow: -moz-scrollbars-none; */
-	max-width: 60%;
+	max-width: 45%;
 	opacity: 1;
 }
 
+h1{
+  color: #222;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  margin: 40px auto;
+  text-transform: uppercase;
+}
+h2,h3,h4{
+	font-weight: 300;
+}
 h2{
 	font-size: 2em;
 	text-align: center;
